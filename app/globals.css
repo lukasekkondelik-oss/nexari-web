@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-montserrat: "Montserrat", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-bg-base text-fg-primary antialiased;
+    font-feature-settings: "cv11", "ss01";
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: rgba(30, 150, 252, 0.35);
+    color: #f4f8fa;
+  }
+
+  :focus-visible {
+    outline: 2px solid #1e96fc;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #040f17;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0f2c40;
+    border-radius: 10px;
+    border: 2px solid #040f17;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #133a55;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .text-gradient-signature {
+    background-image: linear-gradient(115deg, #1e96fc 0%, #5fd9b8 55%, #95f2d9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .noise-overlay {
+    position: relative;
+  }
+
+  .noise-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(244, 248, 250, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(244, 248, 250, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .underline-signature {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .underline-signature::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -2px;
+    height: 1.5px;
+    background-image: linear-gradient(115deg, #1e96fc, #95f2d9);
+    transition: right 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .underline-signature:hover::after,
+  .underline-signature:focus-visible::after {
+    right: 0;
+  }
+}
