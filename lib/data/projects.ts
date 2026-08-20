@@ -47,6 +47,7 @@ export const projects: Project[] = [
     solution:
       "Navrhl a vytvořil jsem web postavený kolem důvěry a přehlednosti: jasná prezentace makléřky, srozumitelný přehled nabízených nemovitostí a jednoduchá cesta ke kontaktu bez zbytečných kroků navíc.",
     image: "",
+    url: "https://webforclients.vercel.app/",
     featured: true,
   },
 ];

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
-import { footerNav, site } from "@/lib/data/site";
+import { footerNav, legal, site } from "@/lib/data/site";
 
 export function Footer() {
   return (
@@ -44,6 +44,14 @@ export function Footer() {
                     {site.email}
                   </a>
                 </li>
+                <li>
+                  <a
+                    href={`tel:${site.phoneHref}`}
+                    className="underline-signature text-sm text-fg-secondary hover:text-fg-primary"
+                  >
+                    {site.phone}
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -75,11 +83,21 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col-reverse items-start gap-4 border-t border-line-subtle pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-fg-muted">
-            © {new Date().getFullYear()} {site.legalName}. Všechna práva vyhrazena.
+        <div className="mt-16 flex flex-col gap-4 border-t border-line-subtle pt-8 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs leading-relaxed text-fg-muted">
+            © {new Date().getFullYear()} {legal.ownerName} · IČO: {legal.ico}
           </p>
-          <p className="text-xs text-fg-muted">Navrženo a postaveno vlastnoručně.</p>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <Link
+              href="/ochrana-osobnich-udaju"
+              className="underline-signature text-xs text-fg-muted hover:text-fg-secondary"
+            >
+              Ochrana osobních údajů
+            </Link>
+            <Link href="/cookies" className="underline-signature text-xs text-fg-muted hover:text-fg-secondary">
+              Cookies
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

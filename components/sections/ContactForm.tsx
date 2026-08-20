@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Link from "next/link";
 import { Loader2, CheckCircle2 } from "lucide-react";
 import { site } from "@/lib/data/site";
 
@@ -121,6 +122,14 @@ export function ContactForm() {
         {status === "submitting" && <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />}
         Odeslat zprávu
       </button>
+
+      <p className="mt-4 text-xs leading-relaxed text-fg-muted">
+        Odesláním formuláře berete na vědomí{" "}
+        <Link href="/ochrana-osobnich-udaju" className="underline-signature text-fg-secondary hover:text-fg-primary">
+          zpracování osobních údajů
+        </Link>{" "}
+        za účelem vyřízení vaší poptávky.
+      </p>
     </form>
   );
 }
