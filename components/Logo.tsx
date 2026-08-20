@@ -52,51 +52,57 @@ export function Logo({ className, variant = "full", title = "Nexari" }: LogoProp
 
   return (
     <svg
-      viewBox="0 0 400 88"
-      className={cn("h-7 w-auto", className)}
+      viewBox="0 0 460 120"
+      className={cn("h-9 w-auto", className)}
       role="img"
       aria-label={title}
     >
       <title>{title}</title>
       <defs>
-        <linearGradient id="nexari-ne-grad" x1="0" y1="0" x2="1" y2="0">
+        <linearGradient id="nexari-ne-grad" x1="0" y1="1" x2="1" y2="0">
           <stop offset="0%" stopColor="#0F6FCC" />
           <stop offset="100%" stopColor="#5CB3FD" />
         </linearGradient>
-        <linearGradient id="nexari-x-grad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#1E96FC" />
+        <linearGradient id="nexari-x-grad" x1="0" y1="0" x2="0.25" y2="1">
+          <stop offset="0%" stopColor="#9FF5E0" />
           <stop offset="55%" stopColor="#5FD9B8" />
-          <stop offset="100%" stopColor="#95F2D9" />
+          <stop offset="100%" stopColor="#3FBFA0" />
         </linearGradient>
         <linearGradient id="nexari-ari-grad" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stopColor="#5FD9B8" />
-          <stop offset="100%" stopColor="#C3F9E9" />
+          <stop offset="100%" stopColor="#95F2D9" />
         </linearGradient>
       </defs>
 
       <text
         x="0"
-        y="66"
+        y="86"
         fontFamily="var(--font-montserrat), system-ui, sans-serif"
         fontWeight={800}
-        fontSize="64"
+        fontSize="70"
         letterSpacing="-1.5"
         fill="url(#nexari-ne-grad)"
       >
         NE
       </text>
 
-      <g>
-        <rect x="168" y="6" width="76" height="15" rx="7.5" fill="url(#nexari-x-grad)" transform="rotate(45 206 44)" />
-        <rect x="168" y="6" width="76" height="15" rx="7.5" fill="url(#nexari-x-grad)" transform="rotate(-45 206 44)" />
-      </g>
+      <text
+        x="128"
+        y="98"
+        fontFamily="var(--font-montserrat), system-ui, sans-serif"
+        fontWeight={900}
+        fontSize="120"
+        fill="url(#nexari-x-grad)"
+      >
+        X
+      </text>
 
       <text
-        x="252"
-        y="66"
+        x="247"
+        y="86"
         fontFamily="var(--font-montserrat), system-ui, sans-serif"
         fontWeight={800}
-        fontSize="64"
+        fontSize="70"
         letterSpacing="-1.5"
         fill="url(#nexari-ari-grad)"
       >

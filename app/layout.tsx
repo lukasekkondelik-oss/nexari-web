@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { site } from "@/lib/data/site";
+import { legal, site } from "@/lib/data/site";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -56,11 +56,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: site.name,
     url: site.url,
     email: site.email,
+    telephone: site.phone,
     description: site.description,
     areaServed: "CZ",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: legal.addressLine1,
+      addressLocality: legal.addressLine2,
+      addressCountry: "CZ",
+    },
     founder: {
       "@type": "Person",
-      name: site.founder,
+      name: legal.ownerName,
     },
     serviceType: ["Tvorba webových stránek", "Vývoj webových aplikací", "AI řešení"],
   };
