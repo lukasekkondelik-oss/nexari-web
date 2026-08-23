@@ -37,6 +37,7 @@ export const projects: Project[] = [
   {
     slug: "realitni-makelka",
     title: "Web pro realitní makléřku",
+    client: "Romana Reality",
     category: "Reality",
     type: "Prezentační web",
     services: ["Webové stránky", "UX / UI design"],
@@ -45,8 +46,16 @@ export const projects: Project[] = [
     challenge:
       "Klientka potřebovala vlastní profesionální web místo spoléhání se na realitní portály — místo, které bude reprezentovat její osobní značku a bude prvním kontaktním bodem pro nové klienty.",
     solution:
-      "Navrhl a vytvořil jsem web postavený kolem důvěry a přehlednosti: jasná prezentace makléřky, srozumitelný přehled nabízených nemovitostí a jednoduchá cesta ke kontaktu bez zbytečných kroků navíc.",
-    image: "",
+      "Navrhl a vytvořil jsem web postavený kolem důvěry a přehlednosti: jasná prezentace makléřky s reálnými referencemi, srozumitelný přehled aktuálně nabízených nemovitostí, přehledný osmikrokový popis průběhu prodeje a jednoduchá cesta ke kontaktu — od telefonu a e-mailu až po online odhad ceny nemovitosti.",
+    image: "/projects/realitni-makelka/hero.webp",
+    gallery: [
+      { src: "/projects/realitni-makelka/sluzby.webp", alt: "Přehled služeb — co klient právě řeší", device: "desktop" },
+      { src: "/projects/realitni-makelka/proc-romana.webp", alt: "Sekce Proč Romana se čtyřmi pilíři důvěry", device: "desktop" },
+      { src: "/projects/realitni-makelka/o-mne.webp", alt: "Sekce O mně s fotografií makléřky", device: "desktop" },
+      { src: "/projects/realitni-makelka/proces.webp", alt: "Osm kroků průběhu prodeje nemovitosti", device: "desktop" },
+      { src: "/projects/realitni-makelka/nemovitosti.webp", alt: "Aktuální nabídka nemovitostí", device: "desktop" },
+      { src: "/projects/realitni-makelka/reference.webp", alt: "Reference klientů", device: "desktop" },
+    ],
     url: "https://webforclients.vercel.app/",
     featured: true,
   },
