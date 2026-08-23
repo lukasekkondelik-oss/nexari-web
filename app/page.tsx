@@ -11,11 +11,11 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <SelectedWork />
       <Services />
       <Process />
       <Testimonials />
       <About />
+      <SelectedWork />
       <FinalCta />
       <ContactSection />
     </>
