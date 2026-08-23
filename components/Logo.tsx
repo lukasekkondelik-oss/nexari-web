@@ -23,30 +23,24 @@ export function Logo({ className, variant = "full", title = "Nexari" }: LogoProp
       >
         <title>{title}</title>
         <defs>
-          <linearGradient id="nexari-mark-grad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#1E96FC" />
+          <linearGradient id="nexari-mark-grad" x1="0" y1="0" x2="0.25" y2="1">
+            <stop offset="0%" stopColor="#9FF5E0" />
             <stop offset="55%" stopColor="#5FD9B8" />
-            <stop offset="100%" stopColor="#95F2D9" />
+            <stop offset="100%" stopColor="#3FBFA0" />
           </linearGradient>
         </defs>
-        <rect
-          x="8"
-          y="36"
-          width="72"
-          height="16"
-          rx="8"
+        <text
+          x="44"
+          y="47"
+          textAnchor="middle"
+          dominantBaseline="central"
+          fontFamily="var(--font-montserrat), system-ui, sans-serif"
+          fontWeight={900}
+          fontSize="88"
           fill="url(#nexari-mark-grad)"
-          transform="rotate(45 44 44)"
-        />
-        <rect
-          x="8"
-          y="36"
-          width="72"
-          height="16"
-          rx="8"
-          fill="url(#nexari-mark-grad)"
-          transform="rotate(-45 44 44)"
-        />
+        >
+          X
+        </text>
       </svg>
     );
   }

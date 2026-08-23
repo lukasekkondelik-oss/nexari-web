@@ -1,9 +1,13 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpengraphImage() {
+export default async function OpengraphImage() {
+  const montserrat900 = await readFile(join(process.cwd(), "public/fonts/montserrat-900.ttf"));
+
   return new ImageResponse(
     (
       <div
@@ -34,29 +38,11 @@ export default function OpengraphImage() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              position: "relative",
             }}
           >
-            <div
-              style={{
-                position: "absolute",
-                width: 62,
-                height: 12,
-                borderRadius: 6,
-                background: "linear-gradient(115deg,#1E96FC,#95F2D9)",
-                transform: "rotate(45deg)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                width: 62,
-                height: 12,
-                borderRadius: 6,
-                background: "linear-gradient(115deg,#1E96FC,#95F2D9)",
-                transform: "rotate(-45deg)",
-              }}
-            />
+            <div style={{ display: "flex", fontFamily: "Montserrat", fontWeight: 900, fontSize: 76, color: "#5FD9B8" }}>
+              X
+            </div>
           </div>
           <div style={{ display: "flex", fontSize: 76, fontWeight: 800, color: "#F4F8FA", letterSpacing: -2 }}>
             NEXARI
@@ -67,6 +53,6 @@ export default function OpengraphImage() {
         </div>
       </div>
     ),
-    { ...size }
+    { ...size, fonts: [{ name: "Montserrat", data: montserrat900, weight: 900, style: "normal" }] }
   );
 }

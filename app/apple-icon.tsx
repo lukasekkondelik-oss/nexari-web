@@ -1,9 +1,13 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
-export default function AppleIcon() {
+export default async function AppleIcon() {
+  const montserrat900 = await readFile(join(process.cwd(), "public/fonts/montserrat-900.ttf"));
+
   return new ImageResponse(
     (
       <div
@@ -14,31 +18,21 @@ export default function AppleIcon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          position: "relative",
         }}
       >
         <div
           style={{
-            position: "absolute",
-            width: 128,
-            height: 24,
-            borderRadius: 12,
-            background: "linear-gradient(115deg,#1E96FC,#95F2D9)",
-            transform: "rotate(45deg)",
+            display: "flex",
+            fontFamily: "Montserrat",
+            fontWeight: 900,
+            fontSize: 130,
+            color: "#5FD9B8",
           }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            width: 128,
-            height: 24,
-            borderRadius: 12,
-            background: "linear-gradient(115deg,#1E96FC,#95F2D9)",
-            transform: "rotate(-45deg)",
-          }}
-        />
+        >
+          X
+        </div>
       </div>
     ),
-    { ...size }
+    { ...size, fonts: [{ name: "Montserrat", data: montserrat900, weight: 900, style: "normal" }] }
   );
 }
