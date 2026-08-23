@@ -59,6 +59,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             </Reveal>
             <Reveal delay={0.1}>
               <h1 className="mt-5 text-display-md font-extrabold text-fg-primary">{project.title}</h1>
+              {project.client && <p className="mt-2 text-sm font-medium text-fg-muted">pro {project.client}</p>}
             </Reveal>
             <Reveal delay={0.15}>
               <p className="mt-4 max-w-xl text-lg leading-relaxed text-fg-secondary">{project.description}</p>
