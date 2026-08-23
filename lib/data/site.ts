@@ -38,17 +38,17 @@ export const legal = {
 };
 
 export const nav = [
-  { label: "Projekty", href: "/#projekty" },
   { label: "Služby", href: "/#sluzby" },
   { label: "Proces", href: "/#proces" },
   { label: "O mně", href: "/#o-mne" },
+  { label: "Projekty", href: "/#projekty" },
   { label: "Kontakt", href: "/#kontakt" },
 ];
 
 export const footerNav = [
-  { label: "Projekty", href: "/projekty" },
   { label: "Služby", href: "/#sluzby" },
   { label: "Proces", href: "/#proces" },
   { label: "O mně", href: "/#o-mne" },
+  { label: "Projekty", href: "/projekty" },
   { label: "Kontakt", href: "/#kontakt" },
 ];
