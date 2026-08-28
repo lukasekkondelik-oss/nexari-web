@@ -56,7 +56,7 @@ export const projects: Project[] = [
       { src: "/projects/realitni-makelka/nemovitosti.webp", alt: "Aktuální nabídka nemovitostí", device: "desktop" },
       { src: "/projects/realitni-makelka/reference.webp", alt: "Reference klientů", device: "desktop" },
     ],
-    url: "https://webforclients.vercel.app/",
+    url: "https://www.romanareality.cz/",
     featured: true,
   },
 ];
