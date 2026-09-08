@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/Button";
@@ -75,7 +75,7 @@ export function Navbar() {
 
       <AnimatePresence>
         {menuOpen && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -84,7 +84,7 @@ export function Navbar() {
           >
             <nav className="flex flex-col gap-2" aria-label="Mobilní navigace">
               {nav.map((item, i) => (
-                <motion.div
+                <m.div
                   key={item.href}
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -97,10 +97,10 @@ export function Navbar() {
                   >
                     {item.label}
                   </Link>
-                </motion.div>
+                </m.div>
               ))}
             </nav>
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
@@ -109,8 +109,8 @@ export function Navbar() {
               <Button href="/#kontakt" size="lg" onClick={() => setMenuOpen(false)}>
                 Probrat projekt
               </Button>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         )}
       </AnimatePresence>
     </header>

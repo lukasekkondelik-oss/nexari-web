@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 
 interface StaggerTextProps {
   lines: string[];
@@ -36,7 +36,7 @@ export function StaggerText({ lines, className, delay = 0 }: StaggerTextProps) {
   }
 
   return (
-    <motion.span
+    <m.span
       className={className}
       variants={container}
       initial="hidden"
@@ -45,11 +45,11 @@ export function StaggerText({ lines, className, delay = 0 }: StaggerTextProps) {
     >
       {lines.map((text) => (
         <span key={text} className="block overflow-hidden">
-          <motion.span variants={line} className="block">
+          <m.span variants={line} className="block">
             {text}
-          </motion.span>
+          </m.span>
         </span>
       ))}
-    </motion.span>
+    </m.span>
   );
 }

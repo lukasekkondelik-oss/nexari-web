@@ -6,7 +6,7 @@ export function FinalCta() {
     <section className="relative overflow-hidden border-t border-line-subtle py-24 lg:py-32">
       <div className="pointer-events-none absolute inset-0 bg-signature-ray opacity-[0.08]" aria-hidden="true" />
       <div
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-dodger/15 blur-[140px]"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[360px] w-[640px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-dodger/15 blur-[90px]"
         aria-hidden="true"
       />
 

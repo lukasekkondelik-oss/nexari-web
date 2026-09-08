@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { MotionProvider } from "@/components/MotionProvider";
 import { legal, site } from "@/lib/data/site";
 import "./globals.css";
 
@@ -85,9 +86,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Přeskočit na obsah
         </a>
-        <Navbar />
-        <main id="main">{children}</main>
-        <Footer />
+        <MotionProvider>
+          <Navbar />
+          <main id="main">{children}</main>
+          <Footer />
+        </MotionProvider>
       </body>
     </html>
   );
