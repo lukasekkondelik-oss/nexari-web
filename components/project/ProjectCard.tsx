@@ -19,6 +19,7 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
                 alt={`Náhled webu — ${project.title}`}
                 width={1200}
                 height={800}
+                sizes="(min-width: 1280px) 620px, (min-width: 640px) 50vw, 100vw"
                 priority={priority}
                 className="aspect-[4/3] w-full object-cover"
               />

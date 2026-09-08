@@ -53,6 +53,7 @@ export function Logo({ className, variant = "full", title = "Nexari" }: LogoProp
       alt={title}
       width={657}
       height={172}
+      sizes="160px"
       priority
       className={cn("h-9 w-auto", className)}
     />

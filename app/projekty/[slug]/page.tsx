@@ -82,6 +82,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
               alt={`Ukázka webu — ${project.title}`}
               width={1600}
               height={1000}
+              sizes="(min-width: 1280px) 1200px, 100vw"
               priority
               className="w-full rounded-lg border border-line object-cover"
             />
@@ -125,6 +126,11 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                     alt={image.alt}
                     width={image.device === "desktop" ? 1600 : 600}
                     height={image.device === "desktop" ? 1000 : 1200}
+                    sizes={
+                      image.device === "desktop"
+                        ? "(min-width: 1280px) 1200px, 100vw"
+                        : "(min-width: 640px) 50vw, 100vw"
+                    }
                     className="w-full rounded-lg border border-line object-cover"
                   />
                 </Reveal>
