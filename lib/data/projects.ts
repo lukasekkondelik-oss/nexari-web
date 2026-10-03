@@ -46,7 +46,7 @@ export const projects: Project[] = [
     challenge:
       "Klientka potřebovala vlastní profesionální web místo spoléhání se na realitní portály — místo, které bude reprezentovat její osobní značku a bude prvním kontaktním bodem pro nové klienty.",
     solution:
-      "Navrhl a vytvořil jsem web postavený kolem důvěry a přehlednosti: jasná prezentace makléřky s reálnými referencemi, srozumitelný přehled aktuálně nabízených nemovitostí, přehledný osmikrokový popis průběhu prodeje a jednoduchá cesta ke kontaktu — od telefonu a e-mailu až po online odhad ceny nemovitosti.",
+      "Navrhl a vytvořil jsem web postavený kolem důvěry a přehlednosti: jasná prezentace makléřky s reálnými referencemi, srozumitelný přehled aktuálně nabízených nemovitostí, přehledný osmikrokový popis průběhu prodeje a jednoduchá cesta ke kontaktu — od telefonu a e-mailu až po online odhad ceny nemovitosti. Nabídku nemovitostí jsem napojil na realitní systém Urbium — klientka novou nemovitost přidá jen tam a na webu se nabídka sama aktualizuje, bez ručního přepisování na dvou místech.",
     image: "/projects/realitni-makelka/hero.webp",
     gallery: [
       { src: "/projects/realitni-makelka/sluzby.webp", alt: "Přehled služeb — co klient právě řeší", device: "desktop" },
