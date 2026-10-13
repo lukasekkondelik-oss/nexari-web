@@ -23,10 +23,12 @@ export function BookingCalendar() {
     );
   }
 
+  const embedSrc = `${site.bookingUrl}${site.bookingUrl.includes("?") ? "&" : "?"}theme=dark`;
+
   return (
     <div className="h-full min-h-[560px] overflow-hidden rounded-lg border border-line bg-bg-elevated">
       <iframe
-        src={site.bookingUrl}
+        src={embedSrc}
         title="Rezervace schůzky"
         className="h-full min-h-[560px] w-full"
         loading="lazy"

@@ -15,11 +15,10 @@ export const site = {
     instagram: "https://www.instagram.com/lukyno0.0/",
   },
   /**
-   * Cal.com (or any iframe-embeddable scheduler) event URL, e.g.
-   * "https://cal.com/nexari/uvodni-hovor". Leave empty to hide the
-   * embedded calendar and fall back to a plain email/contact CTA.
+   * Cal.com event URL used to embed the booking calendar in the contact
+   * section. Override via NEXT_PUBLIC_BOOKING_URL if it ever changes.
    */
-  bookingUrl: process.env.NEXT_PUBLIC_BOOKING_URL ?? "",
+  bookingUrl: process.env.NEXT_PUBLIC_BOOKING_URL ?? "https://cal.com/lukas-kondelik/konzultace",
 };
 
 /**
