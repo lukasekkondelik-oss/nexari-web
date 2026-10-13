@@ -3,7 +3,6 @@ export interface Service {
   title: string;
   summary: string;
   items: string[];
-  primary: boolean;
 }
 
 export const services: Service[] = [
@@ -18,7 +17,6 @@ export const services: Service[] = [
       "Landing pages pro konkrétní nabídku",
       "Redesign zastaralého webu",
     ],
-    primary: true,
   },
   {
     id: "aplikace",
@@ -31,18 +29,5 @@ export const services: Service[] = [
       "MVP pro nový produkt nebo nápad",
       "Rezervační systémy a dashboardy",
     ],
-    primary: true,
-  },
-  {
-    id: "ai",
-    title: "AI řešení",
-    summary:
-      "Tam, kde dává smysl, doplním web nebo aplikaci o AI funkcionalitu — asistenta, který pracuje s daty firmy, nebo automatizaci konkrétního procesu. Vždy jako součást produktu, ne jako samoúčelná nálepka.",
-    items: [
-      "AI asistenti napojení na firemní data",
-      "AI funkcionalita uvnitř webové aplikace",
-      "Automatizace vybraných procesů",
-    ],
-    primary: false,
   },
 ];
