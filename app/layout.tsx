@@ -70,7 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "@type": "Person",
       name: legal.ownerName,
     },
-    serviceType: ["Tvorba webových stránek", "Vývoj webových aplikací", "AI řešení"],
+    serviceType: ["Tvorba webových stránek", "Vývoj webových aplikací"],
   };
 
   return (

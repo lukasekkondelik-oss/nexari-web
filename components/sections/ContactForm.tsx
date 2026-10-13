@@ -85,7 +85,6 @@ export function ContactForm() {
           <option value="web">Nový web</option>
           <option value="redesign">Redesign stávajícího webu</option>
           <option value="app">Webová aplikace</option>
-          <option value="ai">AI řešení</option>
           <option value="nevim">Ještě nevím</option>
         </select>
       </div>

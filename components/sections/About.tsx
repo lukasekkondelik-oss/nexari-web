@@ -36,6 +36,15 @@ export function About() {
               anonymní tým, žádné šablony. Jen jasný proces a produkt, za kterým si stojím.
             </p>
           </Reveal>
+
+          <Reveal delay={0.25} className="mt-10 max-w-xl">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-aqua-dark">Proč zrovna mě</h3>
+            <p className="mt-4 text-base leading-relaxed text-fg-secondary md:text-lg">
+              V tomhle oboru je běžné platit hodně, čekat týdny až měsíce a po podpisu smlouvy se komunikace
+              vytrácí. Dělám to obráceně — cenu i termín dodání domluvíme předem, termín dodržím a odpovím vám,
+              kdykoliv napíšete.
+            </p>
+          </Reveal>
         </div>
       </div>
     </section>
