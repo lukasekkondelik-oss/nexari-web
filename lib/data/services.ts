@@ -28,6 +28,7 @@ export const services: Service[] = [
       "Interní firemní systémy",
       "MVP pro nový produkt nebo nápad",
       "Rezervační systémy a dashboardy",
+      "Napojení na Make a automatizace firemních procesů",
     ],
   },
 ];
