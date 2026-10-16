@@ -16,6 +16,7 @@ export const services: Service[] = [
       "Osobní weby a osobní značky",
       "Landing pages pro konkrétní nabídku",
       "Redesign zastaralého webu",
+      "Formuláře a automatizace sběru poptávek přes Make",
     ],
   },
   {
