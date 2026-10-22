@@ -39,8 +39,8 @@ export function ContactForm() {
     return (
       <div className="flex h-full min-h-[320px] flex-col items-center justify-center rounded-lg border border-line bg-bg-surface p-10 text-center">
         <CheckCircle2 className="h-10 w-10 text-aqua" aria-hidden="true" />
-        <p className="mt-4 text-lg font-semibold text-fg-primary">Zpráva odeslána.</p>
-        <p className="mt-2 max-w-xs text-sm text-fg-secondary">Ozvu se vám co nejdřív, obvykle do jednoho pracovního dne.</p>
+        <p className="mt-4 text-lg font-semibold text-fg-primary">Poptávka úspěšně odeslána.</p>
+        <p className="mt-2 max-w-xs text-sm text-fg-secondary">Budeme vás kontaktovat co nejdřív, obvykle do jednoho pracovního dne.</p>
       </div>
     );
   }
