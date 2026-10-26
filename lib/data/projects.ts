@@ -59,6 +59,30 @@ export const projects: Project[] = [
     url: "https://www.romanareality.cz/",
     featured: true,
   },
+  {
+    slug: "alfa-estate-odhad-nemovitosti",
+    title: "Web pro odhad ceny nemovitosti",
+    client: "ALFA ESTATE V&S Partners",
+    category: "Reality",
+    type: "Landing page",
+    year: 2026,
+    services: ["Webové stránky", "SEO", "Automatizace poptávek"],
+    description:
+      "Samostatný web realitní kanceláře ALFA ESTATE zaměřený na jednu službu — odhad ceny nemovitosti, s formulářem, který poptávku hned posílá makléřům k provolání.",
+    challenge:
+      "Realitní kancelář ALFA ESTATE V&S Partners potřebovala samostatný web pro jednu konkrétní službu — odhad ceny nemovitosti. Měl přesně odpovídat jejich značce, dobře se umísťovat ve vyhledávačích a poptávky z formuláře posílat makléřům rovnou k provolání.",
+    solution:
+      "Postavil jsem responzivní web věrný vizuální identitě klienta — barvy, písmo, logo i styl tlačítek převzaté z hlavního webu — se samostatnými stránkami pro odhad bytu, domu a pozemku, dědické řízení, znalecký posudek a lokální podstránky pro jednotlivé regiony. Formulář se na stránkách služeb sám předvolí podle typu odhadu, po odeslání pošle makléřům e-mail s tlačítkem k zavolání (odesílání přes Resend z vlastní ověřené domény) a web obsahuje kompletní GDPR a cookie řešení včetně možnosti schovat ho před vyhledávači, dokud nebyl spuštěný.",
+    image: "/projects/alfa-estate/hero.webp",
+    gallery: [
+      { src: "/projects/alfa-estate/formular.webp", alt: "Formulář pro odhad ceny nemovitosti", device: "desktop" },
+      { src: "/projects/alfa-estate/cisla-a-proces.webp", alt: "Čísla kanceláře a průběh odhadu ve třech krocích", device: "desktop" },
+      { src: "/projects/alfa-estate/sluzby.webp", alt: "Přehled odhadů a posudků nemovitostí podle typu a lokality", device: "desktop" },
+      { src: "/projects/alfa-estate/o-nas.webp", alt: "Sekce O nás s fotografií makléřů", device: "desktop" },
+    ],
+    url: "https://www.odhadnemovitostialfa.cz/",
+    featured: true,
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
