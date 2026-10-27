@@ -48,6 +48,12 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    other: {
+      "seznam-wmt": "36G6wO8RgZhtTmC8aFx3DfXsNSu0QGEH",
+      "msvalidate.01": "A348DD9360E9A39A598282757C2BF554",
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
