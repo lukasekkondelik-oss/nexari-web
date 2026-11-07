@@ -60,16 +60,6 @@ export function Footer() {
               <ul className="mt-4 space-y-3">
                 <li>
                   <a
-                    href={site.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline-signature text-sm text-fg-secondary hover:text-fg-primary"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a
                     href={site.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"

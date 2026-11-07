@@ -11,7 +11,6 @@ export const site = {
   founder: "Lukáš",
   locale: "cs_CZ",
   social: {
-    linkedin: "https://www.linkedin.com/",
     instagram: "https://www.instagram.com/lukyno0.0/",
   },
   /**
