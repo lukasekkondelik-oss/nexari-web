@@ -7,6 +7,7 @@ import { projects } from "@/lib/data/projects";
 export const metadata: Metadata = {
   title: "Projekty",
   description: "Webové stránky a webové aplikace, které jsem navrhl a vyvinul pro firmy a podnikatele.",
+  alternates: { canonical: "/projekty" },
 };
 
 export default function ProjectsPage() {
