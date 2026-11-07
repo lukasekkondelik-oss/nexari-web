@@ -1,0 +1,25 @@
+# Nexari
+
+> Nexari je jednoosobové studio Lukáše Kondelíka, které navrhuje a vyvíjí moderní webové stránky a webové aplikace pro podnikatele a malé firmy v Česku. Cílem je dodat digitální produkt s jasným účelem, ne další šablonu.
+
+Nexari staví na Next.js, TypeScriptu a Tailwind CSS. Nabízí dvě hlavní služby: firemní a prezentační weby (včetně formulářů a automatizace sběru poptávek přes Make) a webové aplikace na míru (klientské portály, interní systémy, MVP, rezervační systémy, napojení na Make). Reference pochází zatím převážně z realitního oboru.
+
+## Stránky
+
+- [Domů](https://nexari.cz/): Přehled služeb, proces spolupráce, o Lukáši Kondelíkovi a kontaktní formulář.
+- [Projekty](https://nexari.cz/projekty): Portfolio realizovaných webů a webových aplikací.
+- [Web pro odhad ceny nemovitosti](https://nexari.cz/projekty/alfa-estate-odhad-nemovitosti): Case study — samostatný lead-gen web pro realitní kancelář ALFA ESTATE V&S Partners.
+- [Web pro realitní makléřku](https://nexari.cz/projekty/realitni-makelka): Case study — prezentační web pro realitní makléřku Romana Reality s nabídkou nemovitostí napojenou na realitní systém Urbium.
+
+## Kontakt a firemní údaje
+
+- Provozovatel: Lukáš Kondelík, OSVČ (IČO 24868027), Praha 6 – Bubeneč, Česká republika.
+- E-mail: lukaskondelik@nexari.cz
+- Telefon: +420 601 505 713
+- Kontaktní formulář a rezervace konzultace: https://nexari.cz/#kontakt
+
+## Optional
+
+- [Zásady ochrany osobních údajů](https://nexari.cz/ochrana-osobnich-udaju)
+- [Zásady cookies](https://nexari.cz/cookies)
+- [Sitemap](https://nexari.cz/sitemap.xml)
