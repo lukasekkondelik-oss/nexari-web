@@ -25,7 +25,7 @@ export function SelectedWork() {
 
         <div className="mt-14 grid gap-x-8 gap-y-16 sm:grid-cols-2">
           {featured.map((project, i) => (
-            <Reveal key={project.slug} delay={i * 0.1} className={i === 0 ? "sm:col-span-2" : undefined}>
+            <Reveal key={project.slug} delay={i * 0.1}>
               <ProjectCard project={project} priority={i === 0} />
             </Reveal>
           ))}
